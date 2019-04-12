@@ -1,0 +1,3 @@
+
+docker build -t jupyterdocker:v1 .
+docker run -p 8888:8888   -v "$PWD":/myworkdir   --rm -it jupyterdocker:v1
